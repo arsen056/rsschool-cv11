@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 15px;
+    width: 1280px;
+}
+
+.main {
+    width: 880px;
+    padding: 15px 0 0 0;
+    margin-right: auto;
+}
+
+.skills-side {
+    width: 400px;
+    height: 100%;
+    background-color:#6D5DA8;
+    color: #FFFFFF;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.main-head {
+    display: flex;
+        
+    align-items: center;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.about-me {
+    margin: 0 0 0 60px;
+    color: #666666;
+}
+
+.my-name {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.my-name span {
+    font-weight: 900;
+    color: #42489E;
+}
+
+.desc-job {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.contact-icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px 0 0;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #666666;
+    transition: all .2s linear;
+}
+
+.contact-item a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/*  Work experience */
+
+.section-name {
+    padding: 70px 0 0 100px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+.title-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #42489E;
+}
+
+.icon-substrate {
+    position: relative;
+    background-color: #42489E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.section-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 10px;        
+}
+
+/* section item */
+
+.section-item {
+    position: relative;
+    margin: 0 0 80px 0;
+}
+
+.section-item:last-child {
+    margin: 0;
+}
+
+.section-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.section-year {
+    font-size: 20px;
+    font-weight: 700;
+    color: #999999;
+
+    position: absolute;
+    left: -120px;
+    top: -2px;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    left: -38.5px;
+    top: 4.5px;
+    width: 12px;
+    height: 12px;
+    background-color: #42489E;
+    border-radius: 50%;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    left: -45px;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    background-color: #EAE7E7;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.section-company {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    color: #9B9B9B;
+}
+
+.section-description {
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* skills-side */
+
+.quote {
+    padding: 30px;
+    font-size: 18px;
+    
+    line-height: 1.5;
+}
+
+.quote-img {
+    width: 40px;
+    height: 40px;
+}
+
+.title-side {
+    padding: 0 0 30px 0;    
+    font-size: 30px;
+    font-weight: 700;
+    
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.level-item {
+    position: relative;
+    padding: 30px 0 0 0;
+}
+
+.level-item:first-child {
+    padding: 0;
+}
+
+.side-section {
+    padding: 0 0 50px 30px;
+}
+
+.title-skills {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 0 15px 25px;
+}
+
+.progress {
+    position: relative;
+    width: 270px;
+    height: 15px;
+    background-color: #BBB5DB;   
+}
+
+.level-item::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    left: 0px;
+    bottom: 0;
+    background-color: #BBB5DB;
+}
+
+.level-item:first-child::after {
+    height: 60px;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    background-color: #877DBA;
+    z-index: -2;
+}
+
+.css-progress {
+    width: 250px;
+}
+
+.git-progress {
+    width: 220px;
+}
+
+.figma-progress {
+    width: 180px;
+}
+
+.level-pro {
+    margin: 0 0 20px 0;
+}
+
+.level-pro h4 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+.level-pro-item {
+    display: flex;
+}
+
+.level-pro-round {
+    width: 10px;   
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0 10px 0 0;    
+}
+
+.level-pro-round:last-child {
+    margin: 0;
+}
+
+.not-active-round {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Social */
+
+.social-item {
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.social-item img {
+    width: 20px;
+    height: 20px;
+    margin: 0 30px 0 0;
+}
+
+.social-item:last-child {
+    margin: 0;
+}
