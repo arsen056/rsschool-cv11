@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+mark {
+    background-color: #11203A;
+    color: #fff;
+}
+
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -34,7 +39,7 @@ body {
 .main {
     width: 880px;
     padding: 15px 0 0 0;
-    margin-right: auto;
+
 }
 
 .skills-side {
@@ -129,7 +134,7 @@ body {
 .title-section {
     display: flex;
     align-items: center;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .title-section h2 {
@@ -160,20 +165,20 @@ body {
 
 .section-item {
     position: relative;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section-item:last-child {
     margin: 0;
 }
 
-.section-title {
+.item-title {
     position: relative;
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    margin: 0 0 10px 0;
+    margin: 40px 0 10px 0;
 }
 
 .section-year {
@@ -186,7 +191,7 @@ body {
     top: -2px;
 }
 
-.section-title::before {
+.item-title::before {
     position: absolute;
     content: "";
     left: -38.5px;
@@ -197,7 +202,7 @@ body {
     border-radius: 50%;
 }
 
-.section-title::after {
+.item-title::after {
     position: absolute;
     content: "";
     left: -45px;
@@ -227,9 +232,16 @@ body {
 
 .quote {
     padding: 30px;
-    font-size: 18px;
-    
+    font-size: 18px;    
     line-height: 1.5;
+}
+
+.quote-title {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .quote-img {
