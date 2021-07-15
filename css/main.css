@@ -49,6 +49,8 @@ body {
     z-index: 5;
 }
 
+/* main head */
+
 .main-head {
     display: flex;
         
@@ -118,10 +120,9 @@ body {
     text-decoration: underline;
 }
 
+/*  Section */
 
-/*  Work experience */
-
-.section-name {
+.section {
     padding: 70px 0 0 100px;
 }
 
@@ -339,7 +340,6 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-
 /* Social */
 
 .social-item {
@@ -351,8 +351,6 @@ body {
     font-weight: 400;
     line-height: 1;
 }
-
-
 
 .social-item img {
     width: 20px;
