@@ -407,3 +407,9 @@ body {
 .social-item:last-child {
     margin: 0;
 }
+
+.logo-rsschool {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
