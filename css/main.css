@@ -127,6 +127,12 @@ body {
     text-decoration: underline;
 }
 
+.link-main {
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+}
+
 /*  Section */
 
 .section {
