@@ -409,7 +409,5 @@ body {
 }
 
 .logo-rsschool {
-    display: flex;
-    justify-content: center;
     width: 150px;
 }
