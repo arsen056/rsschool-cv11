@@ -31,16 +31,16 @@ body {
 }
 
 .container {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 .main-container {
-    margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
     flex: 1 1 auto;
-    max-width: 880px;
 }
 
 .main {
@@ -48,8 +48,7 @@ body {
 }
 
 .skills-side {
-    width: 400px;
-    min-height: 100%;
+    width: 390px;
     top: 0;
     background: linear-gradient(#6D5DA8, #43479E);
     color: #FFFFFF;
