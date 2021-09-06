@@ -234,6 +234,11 @@ body {
     color: #666666;
 }
 
+.example-code {
+    background-color: #E6E6E6;
+    padding: 15px 20px;
+}
+
 /* skills-side */
 
 .quote {
