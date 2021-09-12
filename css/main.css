@@ -415,3 +415,15 @@ body {
 .logo-rsschool {
     width: 150px;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 769px;
+        flex-direction: column;
+    }
+
+    .skills-side {
+        width: 100%;
+        padding: 50px;
+    }
+}
