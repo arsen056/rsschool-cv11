@@ -9,201 +9,270 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>My resume</title>
+
+    <title>Arsen Vurdikhanov</title>
 </head>
 
 <body>
-    <div class="main-container">
-        <main class="main">
-            <section class="main-head">
-                <img class="avatar" src="./img/avatar.jpg" alt="My photo">
-                <div class="about-me">
-                    <div class="my-name"><span>JUSTIN</span> NGUYEN</div>
-                    <div class="desc-job">Student rsschool</div>
-                    <div class="contacts">
-                        <div class="contact-item">
-                            <img class="contact-icon" src="./img/icons/telegram.svg" alt="telegram">
-                            <a class="" href="#">Telegram - arablinka</a>
+    <div class="container">
+        <div class="main-container">
+            <main class="main">
+                <article class="main-head">
+                    <div class="avatar-box">
+                        <img class="avatar" src="./img/avatar.jpg" alt="My photo">
+                    </div>
+                    <div class="about-me">
+                        <h1 class="my-name"><span>Arsen </span>Vurdikhanov</h1>
+                        <div class="desc-job">Student rsschool</div>
+                        <ul class="contacts">
+                            <li class="contact-item">
+                                <img class="contact-icon" src="./img/icons/telegram.svg" alt="telegram">
+                                <a class="" href="#">Telegram - arablinka</a>
+                            </li>
+                            <li class="contact-item">
+                                <img class="contact-icon" src="./img/icons/email.svg" alt="email">
+                                <a href="mailto:vurdihanov@gmail.com">email</a>
+                            </li>
+                            <li class="contact-item">
+                                <img class="contact-icon" src="./img/icons/location.svg" alt="location">
+                                <a href="#">Republic of Dagestan, Russia federation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <section class="section">
+                    <div class="title-section">
+                        <div class="icon-substrate">
+                            <img class="section-icon" src="./img/icons/work-exp.svg" alt="icon work-experience">
                         </div>
-                        <div class="contact-item">
-                            <img class="contact-icon" src="./img/icons/phone-call.svg" alt="email">
-                            <a href="mailto:vurdihanov@gmail.com">email</a>
+                        <h2>WORK EXPERIENCE</h2>
+                    </div>
+
+                    <div class="section-item">
+                        <h3 class="item-title">
+                            Example of my code</h3>
+
+                        <div class="section-description">
+                            <pre class="example-code"><code>function odds(values){                                    
+    return values.filter(result => result % 2 != 0);
+}                            </code></pre>
                         </div>
-                        <div class="contact-item">
-                            <img class="contact-icon" src="./img/icons/location.svg" alt="location">
-                            <a href="#">Republic of Dagestan, Russia federation</a>
+                    </div>
+
+                    <div class="section-item">
+                        <h3 class="item-title">Html academy marathon</h3>
+                        <div class="section-year">2021</div>
+                        <div class="section-company">Html academy</div>
+                        <div class="section-description">
+                            <p>Participated in the marathon on HTML page layout academy - <a class="link-main"
+                                    href="https://arsen056.github.io/scandi/" target="_blank">Scandi</a>
+                            </p>
                         </div>
                     </div>
-                </div>
+
+                    <div class="section-item">
+                        <h3 class="item-title">ATM Service Engineer</h3>
+                        <div class="section-year">2019</div>
+                        <div class="section-company">Sberbank service</div>
+                        <div class="section-description">
+                            <p>The company is engaged in the provision of it services, in particular, servicing ATMs,
+                                workplaces, office equipment, pos terminals, etc. I am <mark>currently</mark>
+                                working in this company
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3 class="item-title">Engineer constructor</h3>
+                        <div class="section-year">2018</div>
+                        <div class="section-company">Research Institute</div>
+                        <div class="section-description">
+                            <p>The Research Institute develops and manufactures a wide range of aviation intercom and
+                                warning equipment, passenger entertainment systems in flight, video surveillance
+                                systems,
+                                communication and switching equipment for ground equipment, remote power supply systems
+                                for
+                                underwater fiber-optic communication lines, aviation voltage converters.</p>
+                        </div>
+                    </div>
+
+
+
+
+                </section>
+
+                <section class="section">
+                    <div class="title-section">
+                        <div class="icon-substrate">
+                            <img class="section-icon" src="./img/icons/education.svg" alt="icon work-experience">
+                        </div>
+                        <h2>Education</h2>
+                    </div>
+                    <div class="section-item">
+                        <h3 class="item-title">Student</h3>
+                        <div class="section-year">2018</div>
+                        <div class="section-company">South Russian Polytechnic University</div>
+                        <div class="section-description">
+                            <p>2014 - 2018 year. South Russian Polytechnic University (Novocherkassk Polytechnic
+                                University), Faculty of Information Technologies,
+                                majoring in electronics and nanoelectronics.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="title-section">
+                        <div class="icon-substrate">
+                            <img class="section-icon" src="./img/icons/hobbies.svg" alt="icon work-experience">
+                        </div>
+                        <h2>Hobbies and interests</h2>
+                    </div>
+                    <div class="section-description">
+                        <p>Hi, my name is Arsen and I’m 23 years old. In my free time I play football. I love an active
+                            lifestyle. I like to travel. I want to go abroad. I also teach programming. I do rsshool
+                            assignments. My goal is to become a frontend developer</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <aside class="skills-side">
+            <article class="quote">
+                <img class="quote-img" src="./img/icons/quote.svg" alt="quotes">
+                <h2 class="quote-title">About me</h2>
+                <p>Hi, my name is
+                    <mark>Arsen</mark>
+                    and I’m 23 years old. I am planning to study as a
+                    <mark>web developer</mark>
+                    and get a job in
+                    <mark>a large it company.</mark>
+                    I have a very strong desire to learn new things, and I take a responsible
+                    approach to
+                    the tasks set. I devote all my free time to training the frontend. In the future, I plan to
+                    <mark>become</mark> a
+                    <mark>full-stack</mark> developer.
+                </p>
+            </article>
+
+            <section class="side-section">
+                <h2 class="title-side">Foreign languages</h2>
+                <ul class="skills-level">
+                    <li class="level-item">
+                        <div class="title-skills">Russian</div>
+                        <div class="progress russian-progress">
+                        </div>
+                        <span class="level-lang">NATIVE</span>
+                    </li>
+                    <li class="level-item">
+                        <div class="title-skills">English</div>
+                        <div class="progress english-progress"></div>
+                        <span class="level-lang">A1</span>
+                    </li>
+                </ul>
             </section>
 
-            <section class="section-name">
-                <div class="title-section">
-                    <div class="icon-substrate">
-                        <img class="section-icon" src="./img/icons/work-exp.svg" alt="icon work-experience">
-                    </div>
-                    <h2>WORK EXPERIENCE</h2>
-                </div>
-                <div class="section-item">
-                    <h3 class="section-title">Hr manager</h3>
-                    <div class="section-year">2015</div>
-                    <div class="section-company">Bethany Services, Grand Rapids, MI</div>
-                    <div class="section-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris.</p>
-                    </div>
-                </div>
-
-                <div class="section-item">
-                    <h3 class="section-title">Hr manager</h3>
-                    <div class="section-year">2015</div>
-                    <div class="section-company">Bethany Services, Grand Rapids, MI</div>
-                    <div class="section-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris.</p>
-                    </div>
-                </div>
-
-                <div class="section-item">
-                    <h3 class="section-title">Hr manager</h3>
-                    <div class="section-year">2015</div>
-                    <div class="section-company">Bethany Services, Grand Rapids, MI</div>
-                    <div class="section-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris.</p>
-                    </div>
-                </div>
+            <section class="side-section">
+                <h2 class="title-side">Pro skills</h2>
+                <ul class="skills-level">
+                    <li class="level-item">
+                        <div class="title-skills">Html</div>
+                        <div class="progress html-progress"></div>
+                    </li>
+                    <li class="level-item">
+                        <div class="title-skills">Css</div>
+                        <div class="progress css-progress"></div>
+                    </li>
+                    <li class="level-item">
+                        <div class="title-skills">git</div>
+                        <div class="progress git-progress"></div>
+                    </li>
+                    <li class="level-item">
+                        <div class="title-skills">figma</div>
+                        <div class="progress figma-progress"></div>
+                    </li>
+                </ul>
             </section>
 
-            <section class="section-name">
-                <div class="title-section">
-                    <div class="icon-substrate">
-                        <img class="section-icon" src="./img/icons/education.svg" alt="icon work-experience">
-                    </div>
-                    <h2>Education</h2>
-                </div>
-                <div class="section-item">
-                    <h3 class="section-title">Hr manager</h3>
-                    <div class="section-year">2015</div>
-                    <div class="section-company">Bethany Services, Grand Rapids, MI</div>
-                    <div class="section-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris.</p>
-                    </div>
-                </div>
+            <section class="side-section">
+                <h2 class="title-side">Personal skills</h2>
+
+                <ul class="skills-level">
+                    <li class="level-pro">
+                        <h4>Team work</h4>
+                        <div class="level-pro-item">
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round not-active-round"></div>
+                        </div>
+                    </li>
+
+                    <li class="level-pro">
+                        <h4>Communication</h4>
+                        <div class="level-pro-item">
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                        </div>
+                    </li>
+
+                    <li class="level-pro">
+                        <h4>Creative</h4>
+                        <div class="level-pro-item">
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round not-active-round"></div>
+                            <div class="level-pro-round not-active-round"></div>
+                        </div>
+                    </li>
+
+                    <li class="level-pro">
+                        <h4>Organisation</h4>
+                        <div class="level-pro-item">
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round"></div>
+                            <div class="level-pro-round not-active-round"></div>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
-            <section class="section-name">
-                <div class="title-section">
-                    <div class="icon-substrate">
-                        <img class="section-icon" src="./img/icons/hobbies.svg" alt="icon work-experience">
-                    </div>
-                    <h2>Hobbies and interests</h2>
-                </div>
-                <div class="section-description">
-                    <p>Socialising with firends and family, watching TV (BBC Clic, news and documentaries), playing
-                        football on a weekly basis, reading non-fiction books, solving puzzles, fishing on the regular
-                        basis and computing (creating and desiging software and website).</p>
-                </div>
+            <section class="side-section">
+                <h2 class="title-side">Follow me</h2>
+                <ul class="social">
+                    <li class="social-item">
+                        <img src="./img/icons/git.svg" alt="icon">
+                        <a href="https://github.com/arsen056/" target="_blank">github.com/arsen056/</a>
+                    </li>
+
+                    <li class="social-item">
+                        <img src="./img/icons/telegram-color.svg" alt="icon">
+                        <a href="https://t.me/arablinka" target="_blank">t.me/arablinka</a>
+                    </li>
+
+                    <li class="social-item">
+                        <img src="./img/icons/instagram.svg" alt="icon">
+                        <a href="https://www.instagram.com/ars_env/" target="_blank">instagram.com/ars_env</a>
+                    </li>
+                </ul>
             </section>
-        </main>
+
+            <section class="side-section">
+                <h2 class="title-side">Rs-school 2021</h2>
+                <a href="https://rs.school/js/" target="_blank">
+                    <img class="logo-rsschool" src="./img/logo/rs_school_js.svg" alt="rs-school">
+                </a>
+            </section>
+        </aside>
+
     </div>
-    <div class="skills-side">
-        <div class="quote">
-            <img class="quote-img" src="./img/icons/quote.svg" alt="quotes">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        </div>
-
-        <div class="side-section">
-            <h3 class="title-side">Skills</h3>
-            <div class="skills-level">
-                <div class="level-item">
-                    <div class="title-skills">Html</div>
-                    <div class="progress html-progress"></div>
-                </div>
-                <div class="level-item">
-                    <div class="title-skills">Css</div>
-                    <div class="progress css-progress"></div>
-                </div>
-                <div class="level-item">
-                    <div class="title-skills">git</div>
-                    <div class="progress git-progress"></div>
-                </div>
-                <div class="level-item">
-                    <div class="title-skills">figma</div>
-                    <div class="progress figma-progress"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="side-section">
-            <h3 class="title-side">Personal skills</h3>
-
-            <div class="skills-level">
-                <div class="level-pro">
-                    <h4>Team work</h4>
-                    <div class="level-pro-item">
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round not-active-round"></div>
-                        <div class="level-pro-round not-active-round"></div>
-                    </div>
-                </div>
-
-                <div class="level-pro">
-                    <h4>Communication</h4>
-                    <div class="level-pro-item">
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                    </div>
-                </div>
-
-                <div class="level-pro">
-                    <h4>Creative</h4>
-                    <div class="level-pro-item">
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round not-active-round"></div>
-                        <div class="level-pro-round not-active-round"></div>
-                    </div>
-                </div>
-
-                <div class="level-pro">
-                    <h4>Organisation</h4>
-                    <div class="level-pro-item">
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round"></div>
-                        <div class="level-pro-round not-active-round"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="side-section">
-            <h3 class="title-side">Follow me</h3>
-            <ul class="social">
-                <li class="social-item">
-                    <img src="./img/icons/dribbble.svg" alt="icon">
-                    <a href="#">dribbble.com/Figmateam</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
 </body>
 
 </html>

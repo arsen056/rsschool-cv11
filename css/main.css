@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+mark {
+    background-color: #11203A;
+    color: #fff;
+}
+
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -22,43 +27,52 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
+
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 .main-container {
-    margin: 0 auto;
-    padding: 15px;
-    width: 1280px;
+    padding: 30px;
+    flex: 1 1 auto;
 }
 
 .main {
-    width: 880px;
     padding: 15px 0 0 0;
-    margin-right: auto;
 }
 
 .skills-side {
-    width: 400px;
-    height: 100%;
-    background-color:#6D5DA8;
-    color: #FFFFFF;
-
-    position: absolute;
-    right: 0;
+    width: 390px;
     top: 0;
+    background: linear-gradient(#6D5DA8, #43479E);
+    color: #FFFFFF;
+    padding: 30px;
     z-index: 5;
 }
 
+/* main head */
+
 .main-head {
-    display: flex;
-        
+    display: flex;        
     align-items: center;
 }
 
-.avatar {
+.avatar-box {
     width: 250px;
     height: 250px;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .about-me {
@@ -111,17 +125,22 @@ body {
     text-decoration: underline;
 }
 
+.link-main {
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+}
 
-/*  Work experience */
+/*  Section */
 
-.section-name {
+.section {
     padding: 70px 0 0 100px;
 }
 
 .title-section {
     display: flex;
     align-items: center;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .title-section h2 {
@@ -152,20 +171,20 @@ body {
 
 .section-item {
     position: relative;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section-item:last-child {
     margin: 0;
 }
 
-.section-title {
+.item-title {
     position: relative;
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    margin: 0 0 10px 0;
+    margin: 40px 0 10px 0;
 }
 
 .section-year {
@@ -178,7 +197,7 @@ body {
     top: -2px;
 }
 
-.section-title::before {
+.item-title::before {
     position: absolute;
     content: "";
     left: -38.5px;
@@ -189,7 +208,7 @@ body {
     border-radius: 50%;
 }
 
-.section-title::after {
+.item-title::after {
     position: absolute;
     content: "";
     left: -45px;
@@ -215,13 +234,24 @@ body {
     color: #666666;
 }
 
+.example-code {
+    background-color: #E6E6E6;
+    padding: 15px 20px;
+}
+
 /* skills-side */
 
 .quote {
-    padding: 30px;
-    font-size: 18px;
-    
+    font-size: 18px;    
     line-height: 1.5;
+}
+
+.quote-title {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .quote-img {
@@ -229,8 +259,12 @@ body {
     height: 40px;
 }
 
+.side-section {
+    margin: 40px 0 40px 0;
+}
+
 .title-side {
-    padding: 0 0 30px 0;    
+    padding: 0 0 20px 0;    
     font-size: 30px;
     font-weight: 700;
     
@@ -241,14 +275,11 @@ body {
 .level-item {
     position: relative;
     padding: 30px 0 0 0;
+    width: 300px;
 }
 
 .level-item:first-child {
     padding: 0;
-}
-
-.side-section {
-    padding: 0 0 50px 30px;
 }
 
 .title-skills {
@@ -259,9 +290,20 @@ body {
 
 .progress {
     position: relative;
-    width: 270px;
+    width: 250px;    
     height: 15px;
-    background-color: #BBB5DB;   
+    background-color: #BBB5DB;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 15px;
+    background-color: #877DBA;
+    z-index: -2;
 }
 
 .level-item::after {
@@ -278,15 +320,19 @@ body {
     height: 60px;
 }
 
-.progress::before {
-    content: "";
+.level-lang {
     position: absolute;
-    width: 300px;
-    height: 15px;
-    left: 0;
-    top: 0;
-    background-color: #877DBA;
-    z-index: -2;
+    bottom: -2px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+ .russian-progress {
+    width: 295px;
+}
+
+.english-progress {
+    width: 50px;
 }
 
 .css-progress {
@@ -303,6 +349,10 @@ body {
 
 .level-pro {
     margin: 0 0 20px 0;
+}
+
+.level-pro:last-child {
+    margin: 0;
 }
 
 .level-pro h4 {
@@ -332,7 +382,6 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-
 /* Social */
 
 .social-item {
@@ -353,6 +402,30 @@ body {
     margin: 0 30px 0 0;
 }
 
+.social-item a {
+    transition: color 0.2s linear;
+}
+
+.social-item a:hover {
+    color: #000;
+}
+
 .social-item:last-child {
     margin: 0;
+}
+
+.logo-rsschool {
+    width: 150px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 769px;
+        flex-direction: column;
+    }
+
+    .skills-side {
+        width: 100%;
+        padding: 50px;
+    }
 }
