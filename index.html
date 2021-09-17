@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./highlightjs/styles/solarized-light.min.css">
     <title>Arsen Vurdikhanov</title>
 </head>
 
@@ -54,7 +54,7 @@
                             Example of my code</h3>
 
                         <div class="section-description">
-                            <pre class="example-code"><code>function odds(values){                                    
+                            <pre><code>function odds(values){                                    
     return values.filter(result => result % 2 != 0);
 }                            </code></pre>
                         </div>
@@ -271,8 +271,9 @@
                 </a>
             </section>
         </aside>
-
     </div>
+    <script src="./highlightjs/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
