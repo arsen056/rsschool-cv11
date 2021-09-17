@@ -126,7 +126,6 @@ body {
 }
 
 .link-main {
-    font-size: 20px;
     color: #000;
     text-decoration: underline;
 }
@@ -418,6 +417,20 @@ body {
     width: 150px;
 }
 
+@media (max-width: 1360px) {
+    .container {
+        width: 1024px;
+        flex-direction: column;
+    }
+
+    .skills-side {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
 @media (max-width: 1024px) {
     .container {
         width: 769px;
@@ -427,5 +440,54 @@ body {
     .skills-side {
         width: 100%;
         padding: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 481px;        
+    }   
+
+    .main-head {
+        flex-direction: column;
+    }
+
+    .example-code {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 320px;        
+    }  
+
+    .section {
+        padding: 20px 34px;
+    }
+
+    .my-name {
+        font-size: 35px;
+    }
+
+    .section-description {
+        font-size: 12px;
+    }
+
+    .section-year {
+        font-size: 12px;
+        left: 190px;
+    }
+
+    .title-section h2 {
+        font-size: 20px;
+    }
+
+    .item-title {
+        font-size: 15px;
+    }
+
+    .section-icon, .icon-substrate {
+        display: none;
     }
 }
